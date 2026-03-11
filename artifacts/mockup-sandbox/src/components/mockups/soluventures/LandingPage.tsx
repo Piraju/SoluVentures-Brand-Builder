@@ -362,7 +362,7 @@ export function LandingPage() {
               <ul className="space-y-3">
                 <li><a href="#porque-nos" onClick={(e) => scrollToSection(e, 'porque-nos')} className="text-white/80 hover:text-[#32BF50] transition-colors">Por que nós?</a></li>
                 <li><a href="#servicos" onClick={(e) => scrollToSection(e, 'servicos')} className="text-white/80 hover:text-[#32BF50] transition-colors">Serviços</a></li>
-                <li><a href="#cases" onClick={(e) => scrollToSection(e, 'cases')} className="text-white/80 hover:text-[#32BF50] transition-colors">Cases</a></li>
+                <li><a href="#cases" onClick={(e) => scrollToSection(e, 'cases')} className="text-white/80 hover:text-[#32BF50] transition-colors">Time</a></li>
                 <li><a href="#" className="text-white/80 hover:text-[#32BF50] transition-colors">Contato</a></li>
               </ul>
             </div>
