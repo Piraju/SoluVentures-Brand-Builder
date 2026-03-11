@@ -107,7 +107,6 @@ export function LandingPage() {
           </div>
         </div>
       </nav>
-
       {/* SECTION 1: HERO */}
       <section className="bg-[#FCF5EB] pt-[calc(72px+min(10vw,140px))] pb-[min(10vw,140px)] px-6" style={{ paddingTop: 'clamp(120px, 15vw, 180px)' }}>
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
@@ -153,7 +152,6 @@ export function LandingPage() {
           </FadeInUp>
         </div>
       </section>
-
       {/* SECTION 2: POR QUE SOLUVENTURES? */}
       <section id="porque-nos" className="bg-white py-[clamp(80px,10vw,140px)] px-6">
         <div className="max-w-[1200px] mx-auto">
@@ -199,7 +197,6 @@ export function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* SECTION 3: SOLUVENTURES ANSWERS */}
       <section id="servicos" className="bg-white py-[clamp(60px,8vw,100px)] px-6">
         <div className="max-w-[1200px] mx-auto">
@@ -255,9 +252,8 @@ export function LandingPage() {
           </FadeInUp>
         </div>
       </section>
-
       {/* SECTION 4: SAFETY / TIME DE EXECUTORES */}
-      <section id="cases" className="relative py-[clamp(80px,10vw,140px)] px-6 overflow-hidden">
+      <section id="cases" className="relative py-[clamp(80px,10vw,140px)] px-6 overflow-hidden bg-[#FCF5EB]">
         {/* Subtle noise texture and gradient background */}
         <div className="absolute inset-0 bg-[#FCF5EB] z-[-2]"></div>
         <div className="absolute inset-0 opacity-[0.03] z-[-1]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
@@ -310,7 +306,6 @@ export function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* SECTION 5: CTA */}
       <section className="bg-[#32BF50] py-[clamp(80px,10vw,140px)] px-6 relative overflow-hidden">
         {/* Decorative background elements */}
@@ -347,7 +342,6 @@ export function LandingPage() {
           </FadeInUp>
         </div>
       </section>
-
       {/* SECTION 6: FOOTER */}
       <footer className="bg-[#0A0A0A] pt-[60px] pb-[32px] px-6 border-t border-white/10">
         <div className="max-w-[1200px] mx-auto">
