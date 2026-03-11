@@ -76,7 +76,7 @@ export function LandingPage() {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#porque-nos" onClick={(e) => scrollToSection(e, 'porque-nos')} className="text-[#0A0A0A] hover:text-[#32BF50] font-medium transition-colors">Por que nós?</a>
             <a href="#servicos" onClick={(e) => scrollToSection(e, 'servicos')} className="text-[#0A0A0A] hover:text-[#32BF50] font-medium transition-colors">Serviços</a>
-            <a href="#cases" onClick={(e) => scrollToSection(e, 'cases')} className="text-[#0A0A0A] hover:text-[#32BF50] font-medium transition-colors">Cases</a>
+            <a href="#cases" onClick={(e) => scrollToSection(e, 'cases')} className="text-[#0A0A0A] hover:text-[#32BF50] font-medium transition-colors">Time</a>
             <button className="bg-[#32BF50] hover:bg-[#259E40] text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(50,191,80,0.4)]">
               Fale com a gente
             </button>
