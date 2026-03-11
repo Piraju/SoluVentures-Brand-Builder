@@ -1,0 +1,118 @@
+I need you to build a beautiful, modern landing page for "SoluVentures" — a venture builder company — using React, Shadcn, and Tailwind CSS. Below is the full content structure AND the design guidelines to follow.
+
+---
+
+## 🎨 DESIGN SYSTEM & STYLE GUIDELINES
+
+### Typography
+- Hero H1: Bold/Black weight, large (5xl–7xl), mixed between a heavy geometric sans-serif (e.g., Inter Black or DM Sans ExtraBold) and a light/italic serif word for contrast — similar to "We back bold *founders*" style
+- H2 Section titles: Bold, 3xl–4xl, uppercase letter-spacing slightly tighter
+- H3 card titles: Semibold, xl
+- Body/description text: Regular, gray-600, 16–18px, max-width ~480px for readability
+- CTA buttons: Semibold, medium size, rounded-full pill shape
+
+### Color Palette
+- Background 1 (Hero, Safety): #FCF5EB (warm cream/off-white)
+- Background 2 (Why SoluVentures, Answers): #FFFFFF
+- Accent / CTA background: #32BF50 (vivid green)
+- Text primary: #0A0A0A (near black)
+- Text secondary: #555555 (mid gray)
+- Card borders: #E5E5E5, radius: rounded-2xl
+- Icon color (Lucide): #32BF50 on white, or white on green
+
+### Photography & Visuals
+- Use black-and-white editorial-style stock photos (professional founders, team meetings, collaboration)
+- In the Hero, arrange images in a scattered/collage style — slightly rotated (~2–4deg), overlapping, with mixed sizes — creating a dynamic editorial feel
+- Add subtle drop shadows on floating image cards (shadow-lg)
+- Avoid full-width image banners; prefer contained image blocks with negative space around them
+
+### Layout & Spacing
+- Max content width: 1200px, centered, with px-8 gutters
+- Section vertical padding: py-24 minimum
+- Cards: p-8, rounded-2xl, border border-gray-100, hover:shadow-md transition
+- 2-column sections: gap-16 between columns
+- 3-column card grids: gap-8
+
+### Interaction & Motion
+- CTA buttons: hover:scale-105, transition-all duration-200
+- Cards: hover:shadow-lg, hover:border-[#32BF50] subtle transition
+- Prompt suggestion items (Section 3): hover:bg-green-50, hover:text-[#32BF50], with left-border accent animation
+- Section entrance: subtle fade-in-up animation on scroll (use Intersection Observer or Framer Motion)
+
+### Navigation
+- Sticky top navbar, white background, slight shadow on scroll
+- Logo left-aligned, nav links center or right
+- Single rounded-full CTA button in the nav: "Fale com a gente", bg-[#32BF50] text-white
+
+### Green CTA Section (Section 5) specifics
+- Full-width section, bg-[#32BF50]
+- All text in #FFFFFF
+- Checklist items with white circle checkmark icons
+- CTA button: bg-white text-[#32BF50], hover:bg-gray-100, font-bold, rounded-full
+
+### Footer
+- bg-[#0A0A0A] (dark), text-white
+- 3-column layout: logo/tagline | site links | legal links
+- Subtle top border: border-t border-gray-800
+
+---
+
+## 📄 PAGE CONTENT STRUCTURE
+
+### Section 1: Hero
+- Layout: 2 columns
+- Background: #FCF5EB
+- Column 1:
+  - H1: "Estrutura operacional e time sênior para os **fundadores ousados** que moldam o futuro."
+    (Bold the words "fundadores ousados", with the last word in green #32BF50 underlined)
+  - Subtitle: "Transformamos desafios reais de governos e grandes empresas em startups e soluções digitais com serviços de venture building e desenvolvimento de software sob demanda."
+  - CTA Button (rounded-full, bg-[#32BF50]): "Quero resolver meu desafio de inovação!"
+- Column 2:
+  - [GENERATE] Collage of 3 editorial B&W photos of entrepreneurs/founders — scattered layout, slight rotations, overlapping
+
+### Section 2: Por que SoluVentures?
+- Layout: 1 column wrapper → 3-column card grid inside
+- Background: #FFFFFF
+- H2: "Por que SoluVentures?"
+- Cards (3):
+  1. Icon: Lucide `Building2` | H3: "Venture builder" | Desc: "Completamos seu time com C-Levels em até 7 dias"
+  2. Icon: Lucide `Code2` | H3: "Software house inclusa" | Desc: "Desenvolvemos apps que solucionam o desafio integralmente"
+  3. Icon: Lucide `Handshake` | H3: "Somos sócios operacionais" | Desc: "Não somos incubadora. Entregamos time montado e código rodando."
+
+### Section 3: SoluVentures Answers
+- Layout: 1 column, centered card
+- Background: #FFFFFF
+- H2: "Você tem desafios, a SoluVentures tem as soluções"
+- Visual: Generate a ChatGPT-like UI component with:
+  - Header: "Pergunte-me qualquer coisa sobre startups"
+  - 5 prompt suggestion chips/cards with hover animation (left green border appears):
+    1. "Como atravessar o vale da morte das startups?"
+    2. "Por que tantas startups falham antes do primeiro cliente?"
+    3. "Como transformar um problema real em uma startup?"
+    4. "Quando uma ideia deve virar uma empresa?"
+    5. "Como reduzir o risco ao criar uma startup?"
+
+### Section 4: Safety / Time de executores
+- Layout: 2 columns
+- Background: textured cream gradient based on #FCF5EB (add a subtle grain texture overlay via CSS)
+- Column 1: H2: "Time de executores, não teóricos."
+- Column 2: 4 cards with Lucide `CheckCircle2` icon in #32BF50
+  1. "Times previamente montados" — "Após assinatura do contrato, ao invés de iniciar recrutamento, iniciamos execução."
+  2. "Inteligência de Mercado" — "Aumentamos em 82% a taxa de sobrevivência de startups"
+  3. "Living labs governamentais" — "Acesso direto a tomadores de decisão para solucionar problemas reais de Smart Cities."
+  4. "Internacionalização" — "Canal aberto com Fundos Soberanos dos EAU e Capital Europeu."
+
+### Section 5: Call To Action
+- Layout: 1 column, centered
+- Background: #32BF50
+- H2 (white): "Suas Startups deixarão de ser esporte radical."
+- Subtitle (white, lighter weight): "Risco é controlável, pois inovação é engenharia."
+- Checklist (white):
+  - ✓ Projeções baseadas em modelagem fundamentalista
+  - ✓ Metodologia Lean Startup/Scrum
+  - ✓ Injetamos Shared Services (jurídica, contábil com análise tributária)
+- CTA Button (bg-white, text-[#32BF50], rounded-full, font-bold): "Quero reduzir os riscos das minhas startups!"
+
+### Section 6: Footer
+- Background: #0A0A0A
+- 3 columns: Logo + tagline | Navigation links | Privacy Policy, Terms & Conditions

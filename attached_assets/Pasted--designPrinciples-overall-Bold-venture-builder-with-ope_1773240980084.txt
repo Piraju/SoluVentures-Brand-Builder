@@ -1,0 +1,366 @@
+{
+  "designPrinciples": {
+    "overall": "Bold venture builder with operational edge. The design should feel like a high-performance partner — confident, direct, and execution-driven. Never academic or vague.",
+    "keywords": [
+      "bold",
+      "operational",
+      "trustworthy",
+      "modern",
+      "action-oriented",
+      "editorial"
+    ],
+    "avoid": [
+      "generic startup look",
+      "overly playful or informal",
+      "cold/sterile SaaS blue",
+      "cluttered or busy layouts",
+      "passive or generic CTAs"
+    ]
+  },
+
+  "colorPalette": {
+    "primary": {
+      "green": "#32BF50",
+      "greenLight": "#4DD664",
+      "greenDark": "#259E40"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "cream": "#FCF5EB",
+      "sand": "#F0E8D8",
+      "warmGray": "#A0998C",
+      "charcoal": "#2A2A2A",
+      "black": "#0A0A0A"
+    },
+    "accent": {
+      "greenSubtle": "#E8F7EC",
+      "creamDark": "#EDE4D3"
+    },
+    "usage": {
+      "backgrounds": [
+        "#FFFFFF for main content sections (Section 2, Section 3)",
+        "#FCF5EB for Hero and Safety sections",
+        "#32BF50 for CTA section (Section 5)",
+        "#0A0A0A for Footer"
+      ],
+      "text": {
+        "headings": "#0A0A0A on light backgrounds, #FFFFFF on green/dark backgrounds",
+        "body": "#555555 on light backgrounds, rgba(255,255,255,0.85) on dark",
+        "accent": "#32BF50 for highlighted words, links, and icon accents"
+      },
+      "buttons": {
+        "primary": "#32BF50 background with #FFFFFF text, pill-shaped",
+        "primaryOnGreen": "#FFFFFF background with #32BF50 text",
+        "secondary": "transparent background with #0A0A0A border and text"
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "headings": {
+        "family": "DM Sans ExtraBold or Inter Black",
+        "weight": "800-900",
+        "style": "Use color highlight (#32BF50 + underline) for 1-2 key words in H1. Example: 'fundadores ousados' in green."
+      },
+      "body": {
+        "family": "Inter or DM Sans",
+        "weight": "400 for body, 500 for subtitles and emphasis"
+      }
+    },
+    "scale": {
+      "hero-h1": {
+        "size": "clamp(2.75rem, 5.5vw, 4.5rem)",
+        "lineHeight": "1.05",
+        "letterSpacing": "-0.03em",
+        "weight": "900"
+      },
+      "h2": {
+        "size": "clamp(2rem, 4vw, 3rem)",
+        "lineHeight": "1.15",
+        "letterSpacing": "-0.02em",
+        "weight": "800"
+      },
+      "h3": {
+        "size": "1.2rem",
+        "lineHeight": "1.4",
+        "weight": "700"
+      },
+      "body": {
+        "size": "1rem",
+        "lineHeight": "1.65"
+      },
+      "small": {
+        "size": "0.875rem",
+        "lineHeight": "1.5"
+      }
+    },
+    "emphasis": {
+      "technique": "Bold color highlight for key nouns in H1 — apply color #32BF50 and a subtle text-underline-offset decoration to 1-2 words",
+      "example": "Estrutura operacional para os **fundadores ousados** que moldam o futuro."
+    }
+  },
+
+  "spacing": {
+    "philosophy": "Generous white space with strong visual rhythm. Negative space is a signal of confidence, not emptiness.",
+    "sectionPadding": {
+      "vertical": "clamp(80px, 10vw, 140px)",
+      "horizontal": "clamp(20px, 5vw, 80px)"
+    },
+    "containerMaxWidth": "1200px",
+    "componentSpacing": {
+      "betweenSections": "0 (each section handles its own padding)",
+      "betweenHeadingAndContent": "24px - 40px",
+      "betweenCards": "24px - 32px",
+      "insideCards": "32px - 40px"
+    },
+    "grid": {
+      "columns": "12-column grid",
+      "gutter": "24px - 32px"
+    }
+  },
+
+  "components": {
+    "navbar": {
+      "background": "#FFFFFF",
+      "position": "sticky top-0 z-50",
+      "shadow": "0 1px 0 rgba(0,0,0,0.06) on scroll",
+      "height": "72px",
+      "logo": "left-aligned",
+      "links": "right-aligned, color #0A0A0A, hover:color #32BF50, transition 0.2s",
+      "cta": {
+        "text": "Fale com a gente",
+        "background": "#32BF50",
+        "color": "#FFFFFF",
+        "borderRadius": "100px",
+        "padding": "10px 24px",
+        "fontWeight": "600"
+      }
+    },
+    "buttons": {
+      "primary": {
+        "background": "#32BF50",
+        "text": "#FFFFFF",
+        "borderRadius": "100px",
+        "padding": "16px 36px",
+        "fontSize": "0.9375rem",
+        "fontWeight": "600",
+        "hover": {
+          "background": "#259E40",
+          "transform": "translateY(-2px)",
+          "shadow": "0 6px 20px rgba(50, 191, 80, 0.4)"
+        },
+        "transition": "all 0.25s ease"
+      },
+      "primaryOnGreen": {
+        "background": "#FFFFFF",
+        "text": "#32BF50",
+        "borderRadius": "100px",
+        "padding": "16px 36px",
+        "fontWeight": "700",
+        "hover": {
+          "background": "#F0FFF4",
+          "transform": "translateY(-2px)"
+        }
+      },
+      "secondary": {
+        "background": "transparent",
+        "text": "#0A0A0A",
+        "border": "1.5px solid #0A0A0A",
+        "borderRadius": "100px",
+        "hover": {
+          "background": "#0A0A0A",
+          "text": "#FFFFFF"
+        }
+      }
+    },
+    "cards": {
+      "default": {
+        "background": "#FFFFFF",
+        "borderRadius": "20px",
+        "padding": "32px - 40px",
+        "shadow": "0 2px 8px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06)",
+        "border": "1px solid rgba(0,0,0,0.06)"
+      },
+      "elevated": {
+        "background": "#FFFFFF",
+        "borderRadius": "24px",
+        "shadow": "0 4px 16px rgba(0,0,0,0.08), 0 16px 48px rgba(0,0,0,0.1)"
+      },
+      "subtle": {
+        "background": "#FCF5EB",
+        "borderRadius": "16px",
+        "shadow": "none",
+        "border": "1px solid rgba(0,0,0,0.06)"
+      },
+      "checklistCard": {
+        "background": "#FFFFFF",
+        "borderRadius": "16px",
+        "padding": "20px 24px",
+        "border": "1px solid #E8F7EC",
+        "iconColor": "#32BF50"
+      },
+      "hover": {
+        "transform": "translateY(-4px)",
+        "borderColor": "#32BF50",
+        "shadow": "0 8px 32px rgba(50,191,80,0.12)",
+        "transition": "all 0.35s cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "icons": {
+      "style": "Lucide icons, strokeWidth 1.5 to 2",
+      "size": {
+        "small": "20px",
+        "default": "24px",
+        "large": "32px",
+        "feature": "40px (in feature cards)"
+      },
+      "container": {
+        "background": "#E8F7EC",
+        "color": "#32BF50",
+        "borderRadius": "12px",
+        "padding": "14px"
+      }
+    },
+    "badges": {
+      "style": {
+        "background": "#E8F7EC",
+        "text": "#259E40",
+        "borderRadius": "100px",
+        "padding": "6px 14px",
+        "fontSize": "0.75rem",
+        "fontWeight": "600",
+        "textTransform": "uppercase",
+        "letterSpacing": "0.06em"
+      }
+    },
+    "chatPromptUI": {
+      "container": {
+        "background": "#FFFFFF",
+        "borderRadius": "24px",
+        "shadow": "0 4px 24px rgba(0,0,0,0.10)",
+        "border": "1px solid #E5E5E5",
+        "maxWidth": "640px"
+      },
+      "header": {
+        "fontSize": "1rem",
+        "fontWeight": "600",
+        "color": "#0A0A0A",
+        "padding": "20px 24px",
+        "borderBottom": "1px solid #F0F0F0"
+      },
+      "promptItem": {
+        "padding": "14px 20px",
+        "fontSize": "0.9375rem",
+        "color": "#555555",
+        "borderLeft": "3px solid transparent",
+        "hover": {
+          "background": "#F0FFF4",
+          "color": "#32BF50",
+          "borderLeftColor": "#32BF50",
+          "transition": "all 0.2s ease"
+        }
+      }
+    }
+  },
+
+  "imagery": {
+    "style": "Editorial black-and-white photography. Show founders, teams, and operators in real working contexts. Avoid polished stock photo aesthetics.",
+    "treatment": {
+      "photos": "Desaturated to grayscale, high contrast, slightly grain-treated for editorial feel",
+      "illustrations": "Avoid. If needed, use simple geometric shapes in #32BF50 or #FCF5EB",
+      "backgrounds": "Subtle grain overlay (2-3% opacity) on cream sections for warmth"
+    },
+    "heroCollage": {
+      "composition": "3 editorial B&W photos scattered in column 2 — different sizes (large, medium, small), slight rotations (-3deg, 2deg, -1deg), overlapping with z-index stacking",
+      "shadows": "shadow-xl on each photo card for floating effect",
+      "borderRadius": "8px - 12px per image"
+    }
+  },
+
+  "backgrounds": {
+    "patterns": {
+      "texturedGradient": "Subtle SVG noise texture (2-3% opacity) overlaid on #FCF5EB for safety/hero sections",
+      "meshGradient": "Very subtle radial gradient blend within cream tones"
+    },
+    "sections": {
+      "hero": "#FCF5EB with grain texture overlay",
+      "whySoluVentures": "#FFFFFF clean",
+      "answers": "#FFFFFF clean",
+      "safety": "#FCF5EB with textured gradient",
+      "cta": "#32BF50 solid, full-width",
+      "footer": "#0A0A0A dark"
+    }
+  },
+
+  "animations": {
+    "philosophy": "Purposeful and fast. Motion should reinforce action and boldness, never slow or decorative.",
+    "types": {
+      "fadeInUp": {
+        "initial": "opacity: 0, y: 24px",
+        "animate": "opacity: 1, y: 0",
+        "duration": "0.5s",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "hoverLift": {
+        "transform": "translateY(-4px)",
+        "duration": "0.25s"
+      },
+      "stagger": {
+        "delayBetween": "0.08s",
+        "use": "Card grids (Section 2 cards, Section 4 checklist cards)"
+      }
+    },
+    "microInteractions": {
+      "buttons": "scale(1.03) on hover + shadow increase",
+      "cards": "translateY(-4px) + green border highlight on hover",
+      "links": "underline slides in from left, color transitions to #32BF50",
+      "chatPromptItems": "left green border slides in + background tint on hover"
+    }
+  },
+
+  "layout": {
+    "philosophy": "Clear hierarchy, editorial proportions, generous breathing room. Content-first over decoration.",
+    "hero": {
+      "layout": "Two columns, 50/50 split",
+      "textAlignment": "left",
+      "imagePosition": "Column 2 — collage floats slightly above fold with overlap"
+    },
+    "featureCards": {
+      "grid": "3 columns on desktop, 1 on mobile",
+      "alignment": "Icon top-left, title + description left-aligned"
+    },
+    "checklistSection": {
+      "layout": "2 columns: H2 title left, cards grid right",
+      "cardGrid": "2x2 on desktop, 1-column on mobile"
+    },
+    "ctaSections": {
+      "layout": "Centered single column",
+      "maxWidth": "680px for text content"
+    }
+  },
+
+  "trustElements": {
+    "stats": {
+      "style": "Large bold sans-serif numbers in #32BF50, small muted labels",
+      "numberSize": "3rem - 4rem",
+      "labelSize": "0.875rem",
+      "color": "#32BF50"
+    },
+    "checkmarks": {
+      "icon": "CheckCircle2 from Lucide",
+      "color": "#32BF50",
+      "strokeWidth": "2",
+      "style": "Inline with text, subtle #E8F7EC background pill optional"
+    }
+  },
+
+  "footer": {
+    "background": "#0A0A0A",
+    "textColor": "#FFFFFF",
+    "mutedTextColor": "rgba(255,255,255,0.45)",
+    "layout": "3-column grid: Logo + tagline | Navigation links | Legal links",
+    "divider": "1px solid rgba(255,255,255,0.08) above footer",
+    "bottomBar": "Copyright, Privacy Policy, Terms — 0.8rem, rgba(255,255,255,0.4)"
+  }
+}
