@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { LandingPage } from './LandingPage'
-import './index.css' // Se você tiver um arquivo de CSS global
+import { LandingPage } from './LandingPage' // Sem o caminho "/src", pois já estão na mesma pasta
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
