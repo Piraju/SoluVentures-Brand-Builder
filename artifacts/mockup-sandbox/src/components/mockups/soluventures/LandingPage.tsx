@@ -114,7 +114,7 @@ export function LandingPage() {
             <div className="inline-block bg-[#E8F7EC] text-[#259E40] rounded-full px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.06em] mb-6">
               Venture Builder
             </div>
-            <h1 className="font-['DM_Sans',sans-serif] font-black tracking-[-0.03em] text-[#0A0A0A] text-[60px] mb-[24px]">
+            <h1 className="font-['DM_Sans',sans-serif] font-black tracking-[-0.03em] text-[#0A0A0A] text-[60px] leading-[0.9] mb-[24px]">
               Estrutura operacional e time sênior para os <span className="text-[#32BF50] underline decoration-[#32BF50] underline-offset-4">fundadores ousados</span> que moldam o futuro.
             </h1>
             <p className="text-[#555555] text-lg leading-[1.65] max-w-[480px] mb-10">
